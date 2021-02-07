@@ -20,8 +20,23 @@ header h1{
 .title {
     display:flex;
     flex-direction:column;
-    
+    margin: auto;
     text-align: center;
+    padding: 5.6px 12px 15px 12px;
+    margin-bottom: 10px;
+    border:none;
+    border-bottom: solid black 3px;
+    box-shadow: 0 4px 2px -2px black;
+}
+
+
+.title h2{
+    margin-bottom: 6px;
+}
+
+.title p{
+    margin-top: 2px;
+    font-size: 17px;
 }
 
 
@@ -31,11 +46,28 @@ header h1{
     border:none;
     border-bottom: solid black 1px;
     justify-content: space-between;
-   
+    margin-top: 50px;
+    padding-bottom: 30px;   
+}
+
+
+.contact_form {
+    flex-direction: column;
+    display: flex;
+}
+.zip_form {
+    flex-direction: column;
+    display: flex;
 }
 
 legend{
     font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border: none;
+    
+    width: 100%;
 }
 
 label {
@@ -48,6 +80,26 @@ input[type]{
     border-radius: 7px;
     padding: 15px;
     
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus{
+    background-color: cornsilk;
+    
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 7px;
 }
 select {
     background: #e8eeef;
@@ -66,14 +118,29 @@ input::placeholder{
 
 .newsletter {
     border:none;
-    
+    margin-top: 30px;
 }
+.newsletter input:nth-of-type(3),
+.newsletter input:nth-of-type(5){
+    
+    margin-bottom: 30px;
+} 
+.newsletter input:nth-of-type(1),
+.newsletter input:nth-of-type(4){
+    
+    margin-top: 15px;
+} 
 
 textarea {
     background: #e8eeef;
     border: none;
     width:288px;
     height: 100px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+textarea:focus {
+    background-color: cornsilk;
 }
 
 button {
@@ -93,7 +160,63 @@ button {
     
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 footer p {
     text-align: center;
+    margin-bottom: 70px;
 }
+
+
+@media screen and (min-width:768px){
+    main{
+        max-width: 600px;
+        align-content: center;
+        margin:auto;
+    }
+    
+     .contact_information{
+        margin-top: 54px;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+    .contact_form{
+        display: inline-flex;
+       flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+ 
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select{
+     margin-bottom: 0;
+     margin-top: 0;   
+     width: 70%;
+ }
+ 
+ #zip{
+     align-self: flex-start;
+     width: 40%;
+     margin-left:78px;
+ }
+
+ .zip_form{
+      display:block;
+ }
+
+ #state {
+     width: 75%;
+ }
+
+ textarea{
+     width:567px;
+ }
+ }
 
