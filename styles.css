@@ -257,7 +257,6 @@ input[type="tel"]:focus
  
 
  button:focus{
-     
      transition: transform;
      transform: scale(0.9);
  }
