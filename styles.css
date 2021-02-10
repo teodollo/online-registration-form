@@ -242,7 +242,10 @@ input[type="tel"]:focus
      width: 75%;
  }
 
-
+ input[type="radio"]:hover,
+ input[type="checkbox"]:hover {
+   cursor: pointer;
+ }
 
  textarea{
      width:569px;
