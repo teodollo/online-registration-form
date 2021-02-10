@@ -254,12 +254,12 @@ input[type="tel"]:focus
      transition: transform 1s ease-out;
      transform: scale(1.1);
  }
- button:hover{
-     border: solid tomato 2px;
- }
+ 
 
  button:focus{
-     background-color: tomato;
+     
+     transition: transform;
+     transform: scale(0.9);
  }
  }
 
