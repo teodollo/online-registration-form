@@ -45,6 +45,7 @@ header h1{
 .contact_information {
     display:flex;
     flex-direction:column;
+    background-color: snow;
     border:none;
     border-bottom: solid black 1px;
     justify-content: space-between;
@@ -190,6 +191,7 @@ footer p {
         margin-top: 54px;
         margin-bottom: 10px;
         flex-direction: column;
+        
     }
     .contact_form{
         display: inline-flex;
@@ -211,11 +213,12 @@ footer p {
  }
  input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus,
-select:focus{
+input[type="tel"]:focus
+{
     background-color: cornsilk;
     width:420px;
-    transition: width 2s;
+    transition: transform 1s;
+    transform: scale(1.1);
 }
  
  #zip{
@@ -225,7 +228,8 @@ select:focus{
  }
  #zip:focus{
      width:250px;
-     transition: width 2s;
+     transition: transform 1s;
+     transform: scale(1.1);
  }
 
  .zip_form{
@@ -238,8 +242,21 @@ select:focus{
      width: 75%;
  }
 
+
+
  textarea{
      width:569px;
+ }
+ textarea:focus{
+     transition: transform 1s ease-out;
+     transform: scale(1.1);
+ }
+ button:hover{
+     border: solid tomato 2px;
+ }
+
+ button:focus{
+     background-color: tomato;
  }
  }
 
